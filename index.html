@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nagra Web Solutions | Professional Website Design & Digital Solutions</title>
+  <meta name="description" content="Nagra Web Solutions provides professional business websites, education websites, portfolio websites, landing pages and website maintenance solutions.">
+  <meta name="keywords" content="Nagra Web Solutions, website design, business website, education website, computer institute website, portfolio website, landing page, website development India">
+  <meta name="author" content="Nagra Web Solutions">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0b1020">
+
+  <!-- IMPORTANT: After publishing, replace YOUR-USERNAME with your GitHub username. -->
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nagra Web Solutions | Professional Website Design">
+  <meta property="og:description" content="Professional websites for businesses, institutes, education projects and personal brands.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/">
+  <meta property="og:site_name" content="Nagra Web Solutions">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nagra Web Solutions | Professional Website Design">
+  <meta name="twitter:description" content="Professional websites and digital solutions for businesses, institutes and individuals.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#080d1a; --panel:#10182a; --panel2:#141f35; --text:#f6f8ff;
+      --muted:#aab5ca; --line:rgba(255,255,255,.10); --primary:#6d7cff;
+      --primary2:#8c5cff; --success:#25d366; --max:1180px; --radius:22px;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:
+      radial-gradient(circle at 15% 10%,rgba(109,124,255,.18),transparent 30%),
+      radial-gradient(circle at 85% 15%,rgba(140,92,255,.16),transparent 28%),var(--bg);
+      color:var(--text);line-height:1.65}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(var(--max),92%);margin:auto}
+    .nav{position:sticky;top:0;z-index:100;background:rgba(8,13,26,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;font-size:20px;letter-spacing:-.4px}
+    .brand span{color:#8d99ff}
+    .nav-links{display:flex;gap:22px;align-items:center}
+    .nav-links a{color:#c7d0e2;font-size:14px}
+    .nav-links a:hover{color:#fff}
+    .menu{display:none;background:none;border:1px solid var(--line);color:#fff;padding:8px 11px;border-radius:10px}
+    .hero{padding:90px 0 70px}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+    .badge{display:inline-flex;padding:8px 13px;border:1px solid rgba(141,153,255,.28);background:rgba(109,124,255,.10);border-radius:999px;color:#cbd1ff;font-size:13px;font-weight:600}
+    h1{font-size:clamp(42px,6vw,74px);line-height:1.02;letter-spacing:-3px;margin:20px 0}
+    h1 span{background:linear-gradient(90deg,#9aa5ff,#c09cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:18px;color:var(--muted);max-width:680px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:12px;font-weight:700;border:1px solid var(--line);transition:.2s}
+    .btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary2));border:0}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-wa{background:rgba(37,211,102,.12);border-color:rgba(37,211,102,.3);color:#7bf0a0}
+    .hero-card{padding:26px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(20,31,53,.95),rgba(13,20,35,.95));border-radius:28px;box-shadow:0 25px 70px rgba(0,0,0,.30)}
+    .hero-card .mock{border:1px solid var(--line);border-radius:18px;padding:20px;background:#0b1222}
+    .dots{display:flex;gap:7px;margin-bottom:22px}.dot{width:9px;height:9px;border-radius:50%;background:#59647b}
+    .mock h3{margin:0 0 10px;font-size:23px}.mock p{color:var(--muted);font-size:14px}
+    .metric{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
+    .metric div{padding:14px;border-radius:14px;background:var(--panel);border:1px solid var(--line)}
+    .metric b{display:block;font-size:20px}.metric small{color:var(--muted)}
+    section{padding:80px 0}
+    .section-head{max-width:720px;margin-bottom:35px}
+    .eyebrow{text-transform:uppercase;letter-spacing:2px;color:#8f9aff;font-size:12px;font-weight:800}
+    h2{font-size:clamp(30px,4vw,46px);line-height:1.1;margin:9px 0 13px;letter-spacing:-1.5px}
+    .section-head p{color:var(--muted);margin:0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .card{background:rgba(16,24,42,.78);border:1px solid var(--line);border-radius:var(--radius);padding:25px}
+    .card:hover{border-color:rgba(141,153,255,.32);transform:translateY(-2px);transition:.2s}
+    .icon{width:45px;height:45px;border-radius:13px;display:grid;place-items:center;background:rgba(109,124,255,.13);font-size:21px;margin-bottom:16px}
+    .card h3{margin:0 0 8px;font-size:19px}.card p{color:var(--muted);font-size:14px;margin:0}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+    .step{position:relative;padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(16,24,42,.7)}
+    .num{font-size:12px;font-weight:800;color:#9ba5ff}
+    .step h3{margin:9px 0 5px}.step p{margin:0;color:var(--muted);font-size:13px}
+    .price{font-size:32px;font-weight:800;margin:16px 0}.price small{font-size:13px;color:var(--muted);font-weight:500}
+    .list{list-style:none;padding:0;margin:18px 0 0}.list li{padding:8px 0;color:#c9d2e4;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px}
+    .list li:last-child{border-bottom:0}
+    .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:25px}
+    .highlight{padding:30px;border-radius:24px;background:linear-gradient(135deg,rgba(109,124,255,.15),rgba(140,92,255,.10));border:1px solid var(--line)}
+    .check{display:flex;gap:10px;margin:12px 0;color:#d5dced}.check b{color:#8df0ad}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .contact-card{padding:28px;border-radius:24px;background:rgba(16,24,42,.82);border:1px solid var(--line)}
+    .contact-row{display:flex;gap:13px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}
+    .contact-row:last-child{border:0}.contact-row strong{display:block}.contact-row span{color:var(--muted);font-size:13px}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .floating{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:var(--success);color:#fff;display:grid;place-items:center;font-size:27px;box-shadow:0 12px 30px rgba(0,0,0,.35);z-index:90}
+    @media(max-width:850px){
+      .hero-grid,.about,.contact{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}
+      .nav-links{display:none;position:absolute;left:4%;right:4%;top:68px;padding:15px;background:#0d1526;border:1px solid var(--line);border-radius:15px;flex-direction:column;align-items:flex-start}
+      .nav-links.open{display:flex}.menu{display:block}
+    }
+    @media(max-width:560px){
+      .hero{padding-top:60px}.grid-3,.process{grid-template-columns:1fr}h1{letter-spacing:-2px}.lead{font-size:16px}
+      section{padding:60px 0}.hero-card{padding:18px}.nav-inner{min-height:64px}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Nagra Web Solutions",
+    "description":"Professional website design and digital solutions for businesses, education institutes and individuals.",
+    "email":"rishikumar8737053826@gmail.com",
+    "telephone":"+91-9696081608",
+    "areaServed":"India",
+    "url":"https://YOUR-USERNAME.github.io/"
+  }
+  </script>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">Nagra <span>Web Solutions</span></a>
+      <button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Professional Web Design & Digital Solutions</span>
+          <h1>Build a strong <span>online presence</span> for your business.</h1>
+          <p class="lead">Nagra Web Solutions creates modern, responsive and user-friendly websites for businesses, education institutes, professionals and personal brands.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">Get a Website</a>
+            <a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/919696081608?text=Hello%20Nagra%20Web%20Solutions%2C%20I%20want%20to%20discuss%20a%20website.">WhatsApp Us</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Website services overview">
+          <div class="mock">
+            <div class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+            <h3>Professional. Responsive. Search-ready.</h3>
+            <p>One website that works across mobile, tablet and desktop, with clean structure and SEO fundamentals.</p>
+            <div class="metric">
+              <div><b>01</b><small>Modern Design</small></div>
+              <div><b>02</b><small>Mobile Friendly</small></div>
+              <div><b>03</b><small>SEO Ready</small></div>
+              <div><b>04</b><small>Easy to Update</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What we do</span>
+          <h2>Website solutions for different needs</h2>
+          <p>Choose a focused website or a complete digital presence according to your requirements.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><div class="icon">💼</div><h3>Business Website</h3><p>Professional websites that explain your services, build trust and make it easy for customers to contact you.</p></article>
+          <article class="card"><div class="icon">🎓</div><h3>Education Website</h3><p>Websites for coaching centres, computer institutes, schools, training centres and education projects.</p></article>
+          <article class="card"><div class="icon">👤</div><h3>Portfolio Website</h3><p>Clean personal and professional portfolios to showcase skills, work, services and contact information.</p></article>
+          <article class="card"><div class="icon">🚀</div><h3>Landing Page</h3><p>Focused pages for a service, product, campaign, event or lead-generation purpose.</p></article>
+          <article class="card"><div class="icon">📱</div><h3>Responsive Design</h3><p>Layouts designed to remain usable and readable across phones, tablets and desktop screens.</p></article>
+          <article class="card"><div class="icon">🛠️</div><h3>Website Maintenance</h3><p>Content updates, layout improvements, bug fixes and ongoing website support.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Simple process</span>
+          <h2>From idea to live website</h2>
+          <p>A straightforward process keeps the project clear from start to launch.</p>
+        </div>
+        <div class="process">
+          <div class="step"><div class="num">01</div><h3>Requirement</h3><p>Understand your business, audience, pages and goals.</p></div>
+          <div class="step"><div class="num">02</div><h3>Design</h3><p>Create a clean visual structure and responsive layout.</p></div>
+          <div class="step"><div class="num">03</div><h3>Development</h3><p>Build the website with accessible, mobile-friendly structure.</p></div>
+          <div class="step"><div class="num">04</div><h3>Launch</h3><p>Test, publish and prepare the site for search indexing.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pricing</span>
+          <h2>Choose a starting package</h2>
+          <p>Final pricing depends on pages, features, content and custom requirements.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Basic Website</h3><div class="price">₹4,999 <small>starting</small></div>
+            <ul class="list"><li>Professional responsive layout</li><li>Core business information</li><li>Contact & WhatsApp buttons</li><li>Basic SEO setup</li></ul>
+          </article>
+          <article class="card">
+            <h3>Professional</h3><div class="price">₹9,999 <small>starting</small></div>
+            <ul class="list"><li>Multi-section business website</li><li>Services / portfolio sections</li><li>Responsive mobile design</li><li>SEO-ready structure</li></ul>
+          </article>
+          <article class="card">
+            <h3>Custom Project</h3><div class="price">₹19,999+ <small>starting</small></div>
+            <ul class="list"><li>Custom functionality</li><li>Education / business systems</li><li>Advanced pages and workflows</li><li>Custom quote after discussion</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about">
+        <div class="highlight">
+          <span class="eyebrow">Why Nagra Web Solutions</span>
+          <h2>Simple websites with a professional purpose.</h2>
+          <p style="color:var(--muted)">The goal is not just to put a website online. The website should clearly communicate what you do and give visitors an easy path to contact you.</p>
+          <div class="check"><b>✓</b> Mobile-friendly presentation</div>
+          <div class="check"><b>✓</b> Clear service information</div>
+          <div class="check"><b>✓</b> Search-engine friendly basics</div>
+          <div class="check"><b>✓</b> Direct WhatsApp and email contact</div>
+        </div>
+        <div class="card">
+          <span class="eyebrow">About</span>
+          <h2>Nagra Web Solutions</h2>
+          <p style="color:var(--muted)">We help businesses, institutes, professionals and individuals establish a useful online presence through modern websites and practical digital solutions.</p>
+          <p style="color:var(--muted)">Whether you need a simple business profile, an education website, a portfolio or a custom web project, the website can be planned around your actual requirements.</p>
+          <a class="btn btn-primary" href="#contact">Discuss Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's discuss your website</h2>
+          <p>Send your requirement directly by WhatsApp or email.</p>
+        </div>
+        <div class="contact">
+          <div class="contact-card">
+            <div class="contact-row">
+              <div class="icon">💬</div><div><strong>WhatsApp</strong><span>+91 9696081608</span></div>
+            </div>
+            <div class="contact-row">
+              <div class="icon">✉️</div><div><strong>Email</strong><span>rishikumar8737053826@gmail.com</span></div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/919696081608?text=Hello%20Nagra%20Web%20Solutions%2C%20I%20want%20a%20website.">Chat on WhatsApp</a>
+              <a class="btn" href="mailto:rishikumar8737053826@gmail.com?subject=Website%20Enquiry">Send Email</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>What to send in your enquiry</h3>
+            <ul class="list">
+              <li>Business / institute name</li>
+              <li>Type of website required</li>
+              <li>Pages or services you want</li>
+              <li>Any reference website you like</li>
+              <li>Your expected timeline</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" href="https://wa.me/919696081608?text=Hello%20Nagra%20Web%20Solutions%2C%20I%20want%20to%20discuss%20a%20website.">⌕</a>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Nagra Web Solutions. All rights reserved.</div>
+      <div>Professional Website Design & Digital Solutions</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".nav-links a").forEach(a => a.addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.remove("open");
+    }));
+  </script>
+</body>
+</html>
